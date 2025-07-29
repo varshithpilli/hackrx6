@@ -32,11 +32,15 @@ embed_text: 2.99 seconds
 get_chunks: 0.02 seconds
 LLM api call: 2.49 seconds
 Total time: 11.55 seconds
+
+
 download_file: 4.95 seconds
 chunk_text: 1.60 seconds
 embed_text: 3.05 seconds
 get_chunks: 0.02 seconds
 Total time: 16.46 seconds
+
+
 download_file: 0.29 seconds
 chunk_text: 2.01 seconds
 embed_text: 3.12 seconds
