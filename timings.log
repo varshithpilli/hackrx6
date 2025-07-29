@@ -1,0 +1,53 @@
+download_file: 5.22 seconds
+chunk_text: 3.02 seconds
+embed_text: 2.93 seconds
+get_chunks: 0.03 seconds
+get_chunks: 0.02 seconds
+LLM api call: 1.91 seconds
+LLM api call: 1.49 seconds
+Total time: 13.18 seconds
+download_file: 4.03 seconds
+chunk_text: 1.46 seconds
+embed_text: 2.19 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+LLM api call: 1.24 seconds
+LLM api call: 1.57 seconds
+Total time: 9.28 seconds
+download_file: 2.94 seconds
+chunk_text: 1.45 seconds
+embed_text: 2.43 seconds
+get_chunks: 0.02 seconds
+LLM api call: 2.17 seconds
+Total time: 9.01 seconds
+download_file: 6.04 seconds
+chunk_text: 1.42 seconds
+embed_text: 2.58 seconds
+get_chunks: 0.01 seconds
+LLM api call: 2.16 seconds
+Total time: 12.21 seconds
+download_file: 4.40 seconds
+chunk_text: 1.65 seconds
+embed_text: 2.99 seconds
+get_chunks: 0.02 seconds
+LLM api call: 2.49 seconds
+Total time: 11.55 seconds
+download_file: 4.95 seconds
+chunk_text: 1.60 seconds
+embed_text: 3.05 seconds
+get_chunks: 0.02 seconds
+Total time: 16.46 seconds
+download_file: 0.29 seconds
+chunk_text: 2.01 seconds
+embed_text: 3.12 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+Total time: 17.72 seconds

@@ -1,0 +1,16 @@
+download_file: 1.78 seconds
+chunk_text: 2.17 seconds
+embed_text: 2.78 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+LLM api call: 1.28 seconds
+LLM api call: 1.91 seconds
+Total time: 8.65 seconds
+download_file: 0.84 seconds
+chunk_text: 1.97 seconds
+embed_text: 2.76 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+LLM api call: 1.60 seconds
+LLM api call: 1.28 seconds
+Total time: 7.19 seconds
