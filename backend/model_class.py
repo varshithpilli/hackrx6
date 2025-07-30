@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from .infere import get_chunks
 from .utils import log_time
 import time
-from .api_call import api_call
+from .api_call import open_api_call, gemini_api_call
 
 load_dotenv()
 
@@ -61,49 +61,7 @@ class Constitutioner:
             USER QUERY:
             {query}
         """        
-
-    # async def api_call(self, messages):
-    #     headers = {
-    #         "Authorization": f"Bearer {self.api_key}",
-    #         "Content-Type": "application/json"
-    #     }
-    #     payload = {
-    #         "model": self.model,
-    #         "messages": messages,
-    #         "max_tokens": 1024
-    #     }
-
-    #     # timeout = httpx.Timeout(connect=None, read=None, write=None, pool=None)
-    #     timeout = httpx.Timeout(
-    #         connect=10.0,  # 10 sec to connect
-    #         read=120.0,    # 120 sec max to read response
-    #         write=10.0,    # 10 sec to send data
-    #         pool=5.0       # 5 sec to get connection from pool
-    #     )
-
-    #     print("LLM request started")
-    #     start = time.perf_counter()
-
-    #     async with httpx.AsyncClient(timeout=timeout) as client:
-    #         response = await client.post(
-    #             self.base_url,
-    #             headers=headers,
-    #             json=payload
-    #         )
-
-    #     end = time.perf_counter()
-    #     log_time("LLM api call", start, end)
-    #     print("LLM request ended")
-
-    #     data = response.json()
-
-    #     if "choices" not in data:
-    #         print("[ERROR] LLM API Response:", json.dumps(data, indent=2))
-    #         return f"Error: {data.get('error', {}).get('message', 'Unknown error')}"
-
-    #     return data["choices"][0]["message"]["content"]
-
-    
+            
     async def inference(self, query, chunks, embeddings):
         start = time.perf_counter()
 
@@ -118,4 +76,4 @@ class Constitutioner:
         ]
 
         # print(messages[1]['content'])
-        return await api_call(messages)
+        return await gemini_api_call(messages)

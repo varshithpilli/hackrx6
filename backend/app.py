@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Request, Depends, Header, HTTPException
-from .model_class_1 import Constitutioner
-# from .model_class_2 import Constitutioner
+from .model_class import Constitutioner
 from .models import QueryRequest, QueryResponse
 from .file import download_file, chunk_text, embed_text
 from .utils import log_time

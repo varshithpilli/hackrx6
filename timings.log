@@ -89,3 +89,8 @@ embed_text: 2.52 seconds
 get_chunks: 0.01 seconds
 get_chunks: 0.01 seconds
 Total time: 14.51 seconds
+download_file: 6.17 seconds
+chunk_text: 2.04 seconds
+embed_text: 2.41 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.08 seconds
