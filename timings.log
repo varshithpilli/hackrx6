@@ -94,3 +94,105 @@ chunk_text: 2.04 seconds
 embed_text: 2.41 seconds
 get_chunks: 0.02 seconds
 get_chunks: 0.08 seconds
+download_file: 7.46 seconds
+chunk_text: 2.00 seconds
+embed_text: 2.11 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+LLM api call: 2.74 seconds
+LLM api call: 7.13 seconds
+Total time: 18.79 seconds
+download_file: 5.29 seconds
+chunk_text: 1.91 seconds
+embed_text: 2.13 seconds
+get_chunks: 0.01 seconds
+LLM api call: 1.62 seconds
+Total time: 10.96 seconds
+download_file: 4.49 seconds
+chunk_text: 1.38 seconds
+embed_text: 1.64 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.02 seconds
+LLM api call: 2.29 seconds
+LLM api call: 2.51 seconds
+LLM api call: 3.20 seconds
+LLM api call: 5.44 seconds
+Total time: 12.97 seconds
+download_file: 3.33 seconds
+chunk_text: 1.56 seconds
+embed_text: 1.65 seconds
+get_chunks: 0.01 seconds
+LLM api call: 1.66 seconds
+Total time: 8.21 seconds
+download_file: 105.14 seconds
+chunk_text: 7.75 seconds
+embed_text: 2.43 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+download_file: 4.80 seconds
+chunk_text: 2.31 seconds
+embed_text: 2.66 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+LLM api call: 9.88 seconds
+LLM api call: 9.86 seconds
+LLM api call: 9.87 seconds
+LLM api call: 9.84 seconds
+LLM api call: 9.85 seconds
+Total time: 125.22 seconds
+download_file: 16.13 seconds
+chunk_text: 25.61 seconds
+embed_text: 19.12 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+LLM api call: 61.08 seconds
+LLM api call: 61.04 seconds
+LLM api call: 61.06 seconds
+Total time: 70.87 seconds
+download_file: 15.42 seconds
+chunk_text: 22.65 seconds
+embed_text: 16.98 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+LLM api call: 55.37 seconds
+LLM api call: 55.27 seconds
+LLM api call: 55.35 seconds
+LLM api call: 55.34 seconds
+LLM api call: 55.23 seconds
+LLM api call: 55.24 seconds
+LLM api call: 55.30 seconds
+LLM api call: 55.26 seconds
+LLM api call: 1.23 seconds
+LLM api call: 2.41 seconds
+LLM api call: 2.44 seconds
+LLM api call: 57.63 seconds
+LLM api call: 2.70 seconds
+LLM api call: 2.79 seconds
+LLM api call: 2.83 seconds
+LLM api call: 2.79 seconds
+LLM api call: 2.87 seconds
+LLM api call: 3.39 seconds
+download_file: 362.53 seconds
+chunk_text: 187.72 seconds
