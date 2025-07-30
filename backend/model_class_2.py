@@ -1,9 +1,11 @@
+import httpx
 import os
 from dotenv import load_dotenv
+from openai import OpenAI
 from .infere import get_chunks
+import json
 from .utils import log_time
 import time
-from .api_call import api_call
 
 load_dotenv()
 
@@ -13,8 +15,8 @@ MODEL = os.getenv("MODEL")
 
 class Constitutioner:
     def __init__(self):
-        self.api_key = API_KEY
-        self.base_url = BASE_URL
+        self.api_key = "sk-72a20befadd045fd9d5c55d4e8ae4aca"
+        self.base_url = "https://api.deepseek.com"
         self.model = MODEL
 
     def system_prompt(self):
@@ -62,7 +64,19 @@ class Constitutioner:
             {query}
         """        
 
-    # async def api_call(self, messages):
+    def api_call(self, messages):
+        client = OpenAI(api_key=self.api_key, base_url=self.base_url)
+
+        response = client.chat.completions.create(
+            model="deepseek-chat",
+            messages=messages,
+            stream=False
+        )
+
+        return response.choices[0].message.content
+
+    
+    # async def api_call(self, messages, max_retries=3):
     #     headers = {
     #         "Authorization": f"Bearer {self.api_key}",
     #         "Content-Type": "application/json"
@@ -73,36 +87,24 @@ class Constitutioner:
     #         "max_tokens": 1024
     #     }
 
-    #     # timeout = httpx.Timeout(connect=None, read=None, write=None, pool=None)
-    #     timeout = httpx.Timeout(
-    #         connect=10.0,  # 10 sec to connect
-    #         read=120.0,    # 120 sec max to read response
-    #         write=10.0,    # 10 sec to send data
-    #         pool=5.0       # 5 sec to get connection from pool
-    #     )
+    #     timeout = httpx.Timeout(connect=10, read=120, write=10, pool=5)
 
-    #     print("LLM request started")
-    #     start = time.perf_counter()
+    #     for attempt in range(max_retries):
+    #         try:
+    #             async with httpx.AsyncClient(timeout=timeout) as client:
+    #                 response = await client.post(self.base_url, headers=headers, json=payload)
 
-    #     async with httpx.AsyncClient(timeout=timeout) as client:
-    #         response = await client.post(
-    #             self.base_url,
-    #             headers=headers,
-    #             json=payload
-    #         )
+    #             data = response.json()
 
-    #     end = time.perf_counter()
-    #     log_time("LLM api call", start, end)
-    #     print("LLM request ended")
+    #             if "choices" in data:
+    #                 return data["choices"][0]["message"]["content"]
 
-    #     data = response.json()
+    #             print("[ERROR] LLM API Response:", json.dumps(data, indent=2))
+    #         except httpx.ReadTimeout:
+    #             print(f"[Retry {attempt+1}] Request timed out, retrying...")
 
-    #     if "choices" not in data:
-    #         print("[ERROR] LLM API Response:", json.dumps(data, indent=2))
-    #         return f"Error: {data.get('error', {}).get('message', 'Unknown error')}"
-
-    #     return data["choices"][0]["message"]["content"]
-
+    #     return "Error: LLM API timed out after multiple retries"
+    
     
     async def inference(self, query, chunks, embeddings):
         start = time.perf_counter()
@@ -118,4 +120,5 @@ class Constitutioner:
         ]
 
         # print(messages[1]['content'])
-        return await api_call(messages)
+        # return await self.api_call(messages)
+        return self.api_call(messages)

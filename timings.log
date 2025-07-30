@@ -55,3 +55,37 @@ get_chunks: 0.02 seconds
 get_chunks: 0.01 seconds
 get_chunks: 0.01 seconds
 Total time: 17.72 seconds
+download_file: 0.83 seconds
+chunk_text: 1.97 seconds
+embed_text: 2.68 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.07 seconds
+download_file: 0.78 seconds
+chunk_text: 2.18 seconds
+embed_text: 2.51 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.04 seconds
+download_file: 0.97 seconds
+chunk_text: 2.06 seconds
+embed_text: 2.72 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+Total time: 9.29 seconds
+download_file: 0.75 seconds
+chunk_text: 2.12 seconds
+embed_text: 2.54 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.02 seconds
+Total time: 15.87 seconds
+download_file: 0.94 seconds
+chunk_text: 1.84 seconds
+embed_text: 2.57 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+Total time: 15.12 seconds
+download_file: 0.70 seconds
+chunk_text: 1.92 seconds
+embed_text: 2.52 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+Total time: 14.51 seconds
