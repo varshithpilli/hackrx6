@@ -196,3 +196,62 @@ LLM api call: 2.87 seconds
 LLM api call: 3.39 seconds
 download_file: 362.53 seconds
 chunk_text: 187.72 seconds
+embed_text: 38.47 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+LLM api call: 592.22 seconds
+LLM api call: 647.49 seconds
+Total time: 647.38 seconds
+Total time: 708.42 seconds
+download_file: 5.66 seconds
+chunk_text: 2.41 seconds
+embed_text: 2.49 seconds
+get_chunks: 0.02 seconds
+download_file: 1.43 seconds
+chunk_text: 1.95 seconds
+embed_text: 2.83 seconds
+get_chunks: 0.03 seconds
+LLM api call: 8.84 seconds
+Total time: 15.07 seconds
+
+
+download_file: 0.68 seconds
+chunk_text: 2.09 seconds
+embed_text: 2.41 seconds
+get_chunks: 0.02 seconds
+LLM api call: 6.77 seconds
+Total time: 11.97 seconds
+download_file: 1.02 seconds
+chunk_text: 3.12 seconds
+embed_text: 2.83 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.03 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.02 seconds
+get_chunks: 0.01 seconds
+get_chunks: 0.01 seconds
+Deepseek api call: 9.62 seconds
+Deepseek api call: 8.86 seconds
+Deepseek api call: 9.69 seconds
+Deepseek api call: 10.84 seconds
+Deepseek api call: 10.25 seconds
+Deepseek api call: 12.87 seconds
+Deepseek api call: 10.91 seconds
+Deepseek api call: 12.73 seconds
+Deepseek api call: 17.52 seconds
+Deepseek api call: 16.95 seconds
+Total time: 26.29 seconds
